@@ -1,0 +1,33 @@
+%centered-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%arrow {
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.5);
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 6px;
+}
+
+%disabled-arrow {
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.25);
+  border-width: 0 4px 4px 0;
+}
+
+%arrow-left {
+  transform: rotate(135deg);
+}
+
+%arrow-right {
+  transform: rotate(-45deg);
+}
+
+%no-outlines {
+  background: none;
+  border: none;
+  box-shadow: none;
+}

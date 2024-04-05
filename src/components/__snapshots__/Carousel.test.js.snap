@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot test for Carousel.tsx 1`] = `
+<DocumentFragment>
+  <div
+    class="carousel-wrapper"
+    role="toolbar"
+  >
+    <button
+      aria-label="Previous"
+      class="carousel-nav-btn"
+      type="button"
+    >
+      <i
+        class="arrow left"
+      />
+    </button>
+    <div
+      class="carousel-list"
+      style="width: calc(900px - 2px);"
+    >
+      <div
+        class="carousel-track"
+        role="listbox"
+        style="transform: translate3d(-600px, 0, 0); width: calc(2100px);"
+      >
+        <div
+          class="slide clone-slide"
+          data-index="1"
+          tabindex="-1"
+        >
+          <h3>
+            2
+          </h3>
+        </div>
+        <div
+          class="slide clone-slide"
+          data-index="2"
+          tabindex="-1"
+        >
+          <h3>
+            3
+          </h3>
+        </div>
+        <div
+          class="slide"
+          data-index="0"
+          tabindex="-1"
+        >
+          <h3>
+            1
+          </h3>
+        </div>
+        <div
+          class="slide"
+          data-index="1"
+          tabindex="-1"
+        >
+          <h3>
+            2
+          </h3>
+        </div>
+        <div
+          class="slide"
+          data-index="2"
+          tabindex="-1"
+        >
+          <h3>
+            3
+          </h3>
+        </div>
+        <div
+          class="slide clone-slide"
+          data-index="0"
+          tabindex="-1"
+        >
+          <h3>
+            1
+          </h3>
+        </div>
+        <div
+          class="slide clone-slide"
+          data-index="1"
+          tabindex="-1"
+        >
+          <h3>
+            2
+          </h3>
+        </div>
+      </div>
+      <input
+        data-testid="slideIndex"
+        type="hidden"
+        value="2"
+      />
+    </div>
+    <button
+      aria-label="Next"
+      class="carousel-nav-btn"
+      type="button"
+    >
+      <i
+        class="arrow right"
+      />
+    </button>
+  </div>
+  <hr />
+  <div
+    class="slides-heading"
+  >
+    <h3>
+      Slides - (3)
+    </h3>
+    <button
+      type="button"
+    >
+      Add Slide
+    </button>
+  </div>
+  <div
+    class="slides-inputs"
+  >
+    <div>
+      <input
+        type="text"
+        value="1"
+      />
+      <button
+        type="button"
+      >
+        delete
+      </button>
+    </div>
+    <div>
+      <input
+        type="text"
+        value="2"
+      />
+      <button
+        type="button"
+      >
+        delete
+      </button>
+    </div>
+    <div>
+      <input
+        type="text"
+        value="3"
+      />
+      <button
+        type="button"
+      >
+        delete
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

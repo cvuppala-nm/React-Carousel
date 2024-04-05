@@ -1,0 +1,37 @@
+@import './placeholders.scss', './variables.scss', './functions.scss';
+
+@mixin button {
+  padding: 4px 14px;
+  background: $white;
+  box-shadow: none;
+  border: 2px solid $gray;
+  border-radius: 3px;
+}
+
+.slides-heading {
+  @extend %centered-flex;
+
+  gap: toRem(8px);
+
+  button {
+    @include button;
+  }
+}
+
+.slides-inputs {
+  @extend %centered-flex;
+  flex-direction: column;
+  gap: 6px;
+
+  input {
+    padding: 4px 12px;
+    background-color: $white;
+    border: 3px solid $gray;
+    border-radius: 4px;
+    margin-right: 6px;
+  }
+
+  button {
+    @include button;
+  }
+}

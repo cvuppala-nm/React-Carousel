@@ -1,0 +1,105 @@
+@import './placeholders.scss', './variables.scss', './functions.scss';
+
+@mixin button {
+  padding: 4px 14px;
+  background: $white;
+  box-shadow: none;
+  border: 2px solid $gray;
+  border-radius: 3px;
+}
+
+.carousel {
+  &-wrapper {
+    @extend %centered-flex;
+    margin: auto;
+    max-width: $container-max-width;
+  }
+
+  &-list {
+    display: block;
+    overflow: hidden;
+    margin: 0 toRem(16px);
+    height: $container-height;
+  }
+
+  &-track {
+    @extend %centered-flex;
+    opacity: 1;
+    height: $container-height;
+  }
+
+  &-nav-btn {
+    @extend %no-outlines;
+    cursor: pointer;
+
+    .arrow {
+      @extend %arrow;
+    }
+
+    .left {
+      @extend %arrow-left;
+    }  
+
+    .right {
+      @extend %arrow-right;
+    }
+
+    &:disabled {
+      .arrow {
+        @extend %disabled-arrow;
+      }
+    }
+  }
+}
+
+.slide {
+  @extend %centered-flex;
+  flex: 0 0 $slide-width;
+  width: $slide-width;
+  height: $slide-width;
+  background-color: $white;
+  border-radius: toRem(8px);
+  box-shadow: toRem(0.5px) toRem(0.5px) toRem(2px) $light-gray, inset toRem(-8px) 0 0 0 $light-gray;
+
+  h3 {
+    font-size: toRem(24px);
+    line-height: toRem(32px);
+    color: $black;
+  }
+}
+
+.slides-heading {
+  @extend %centered-flex;
+
+  gap: toRem(8px);
+
+  button {
+    @include button;
+  }
+}
+
+.slides-inputs {
+  @extend %centered-flex;
+  flex-direction: column;
+  gap: 6px;
+
+  input {
+    padding: 4px 12px;
+    background-color: $white;
+    border: 3px solid $gray;
+    border-radius: 4px;
+    margin-right: 6px;
+  }
+
+  button {
+    @include button;
+  }
+}
+
+@-webkit-keyframes slide {
+  100% { left: 0; }
+}
+
+@keyframes slide {
+  100% { left: 0; }
+}

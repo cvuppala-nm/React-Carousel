@@ -1,0 +1,14 @@
+@import './variables.scss', './placeholders.scss', './functions.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: block;
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+  background: $light-gray;
+}
